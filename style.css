@@ -1,0 +1,63 @@
+/*colours and margins*/
+.tab{
+	color: white;
+	cursor: pointer;
+}
+
+.tab label i{
+	margin: 0.5rem 0rem;
+}
+
+.tab .down {
+	margin-left: 95%;
+}
+
+.tab:hover {
+	background-color: #7211BD;
+}
+
+.text{
+	color: grey;
+	margin: 1rem 0rem;
+}
+
+
+.tab {
+	background-color: #511186;
+}
+
+/*input unchecked*/
+.content {
+	overflow: hidden;
+	height: 0px;
+	color: black;
+	background-color: white;
+	border: solid black;
+	transition: height 0.4s;
+	border:0px;
+}
+
+.label {
+	width: 100%;
+}
+
+input {
+	display: none;
+}
+
+.tab .down i{
+	transition: 0.4s;
+}
+
+/*input checked*/
+input:checked ~ .content {
+	border: 0.5px solid black;
+	transition: height 0.4s;
+	height: 3rem;
+}
+
+input:checked ~ label .down i{
+	transition: 0.4s;
+	transform: rotate(-90deg);
+}
+
